@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="testimonial page" />
+    <meta name="author-info" content="nadya.fd" />
 
     <link
       rel="icon"
@@ -13,16 +15,126 @@
 
     <title>Testimonial Page | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
+      @font-face {
+        font-family: 'Sora';
+        src: url('./resources/Sora/static/Sora-Regular.ttf');
+        /* src: url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');*/
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Sora-bold';
+        src: url('./resources/Sora/static/Sora-Bold.ttf');
+        /* src: url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');*/
+        font-display: swap;
+      }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Sora', serif;
+        color: #52525a;
       }
 
       body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
+        background-color: #fafaf9;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        flex: 1;
+        max-width: 1136px;
+        margin-top: 162px;
+      }
+
+      .reviewers-section,
+      .reviews-section {
+        flex: 1;
+      }
+
+      li {
+        list-style: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 8px;
+      }
+
+      .reviews-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .reviewers-img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #f5c044;
+        padding-left: 8px;
+        padding-top: 4px;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        margin-bottom: 12px;
+        font: 36px;
+        color: #18181b;
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 32px;
+        color: #52525a;
+        margin-bottom: 32px;
+      }
+      .review1,
+      .review2 {
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+        width: 400px;
+        border-radius: 15px;
+        padding: 28px 40px;
+        font-size: 16px;
+      }
+      .review2-imgs,
+      .review1-imgs {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 16px;
+      }
+
+      .review1-title,
+      .review2-title {
+        margin-bottom: 8px;
+        font-family: 'Sora-bold';
+      }
+
+      .review1-text,
+      .review2-text {
+        line-height: 24px;
+      }
+
+      .review1-imgs > :first-child,
+      .review2-imgs > :first-child {
+        margin-right: 20px;
+      }
+
+      .review1 {
+        align-self: end;
       }
 
       .author-info {
@@ -38,30 +150,88 @@
     </style>
   </head>
   <body>
-    <!-- 
-  ⭐️
-
-  Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.
-  
-  Checklist to Review an Academic Paper
-  
-  Peer Review Checklist
-  
-  Checklist for Editors, Reviewers, and Authors of SPIE Journals
-  
-  Samantha Lee
-  
-  The checklist ensures that the review process is thorough
-  
-  Rachel Patel
-  
-  I highly recommend the Writecream Business Description -->
-
+    <div class="main">
+      <div class="reviewers-section">
+        <div class="reviewers-img">⭐️</div>
+        <div class="reviewers-description">
+          <h1>Reviewers</h1>
+          <p>
+            Reviewers is where people can access guidelines, checklists, and
+            other tools to assist them in reviewing papers or manuscripts. It
+            provides a structured approach to ensure that the review process is
+            thorough, efficient, and consistent.
+          </p>
+        </div>
+        <ul class="reviewers-list">
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt=""
+              class="bullet"
+            />
+            <span>Checklist to Review an Academic Paper</span>
+          </li>
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt=""
+              class="bullet"
+            />
+            <span>Peer Review Checklist</span>
+          </li>
+          <li>
+            <img
+              src="./resources/Done_ring_round_fill.svg"
+              alt=""
+              class="bullet"
+            />
+            <span>
+              Checklist for Editors, Reviewers, and Authors of SPIE
+              Journals</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="reviews-section">
+        <div class="review1">
+          <div class="review1-imgs">
+            <img src="./resources/google-png.png" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill_gray.svg" alt="" />
+          </div>
+          <div class="review1-info">
+            <div class="review1-title">Samantha Lee</div>
+            <div class="review1-text">
+              The checklist ensures that the review process is thorough
+            </div>
+          </div>
+        </div>
+        <div class="review2">
+          <div class="review2-imgs">
+            <img src="./resources/meta-png.png" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+            <img src="./resources/Star_fill.svg" alt="" />
+          </div>
+          <div class="review2-info">
+            <div class="review2-title">Rachel Patel</div>
+            <div class="review2-text">
+              I highly recommend the Writecream Business Description
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="#">Nadya.Fd</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
-      >.
+      >
     </div>
   </body>
 </html>
