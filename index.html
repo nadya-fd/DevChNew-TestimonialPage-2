@@ -47,7 +47,7 @@
         background-color: #fafaf9;
       }
 
-      .main {
+      main {
         display: flex;
         justify-content: space-around;
         gap: 50px;
@@ -138,7 +138,7 @@
       }
 
       @media (max-width: 1024px) {
-        .main {
+        main {
           flex-direction: column;
           margin-top: 50px;
           align-items: center;
@@ -151,7 +151,7 @@
       }
 
       @media (max-width: 640px) {
-        .main {
+        main {
           margin-left: 12px;
           margin-right: 12px;
         }
@@ -173,7 +173,7 @@
     </style>
   </head>
   <body>
-    <div class="main">
+    <main>
       <div class="reviewers-section">
         <div class="reviewers-img">⭐️</div>
         <div class="reviewers-description">
@@ -218,12 +218,17 @@
       <div class="reviews-section">
         <div class="review1">
           <div class="review1-imgs">
-            <img src="./resources/google-png.png" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill_gray.svg" alt="" />
+            <img
+              src="./resources/google-png.png"
+              alt="google"
+              height="29"
+              width="87"
+            />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill_gray.svg" alt="gray star" />
           </div>
           <div class="review1-info">
             <div class="review1-title">Samantha Lee</div>
@@ -234,12 +239,17 @@
         </div>
         <div class="review2">
           <div class="review2-imgs">
-            <img src="./resources/meta-png.png" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
-            <img src="./resources/Star_fill.svg" alt="" />
+            <img
+              src="./resources/meta-png.png"
+              alt="Meta"
+              height="32"
+              widht="82"
+            />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
+            <img src="./resources/Star_fill.svg" alt="yellow star" />
           </div>
           <div class="review2-info">
             <div class="review2-title">Rachel Patel</div>
@@ -249,6 +259,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
